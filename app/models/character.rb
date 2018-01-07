@@ -3,7 +3,6 @@ class Character < ActiveRecord::Base
   belongs_to :actor
 
   def say_that_thing_you_say
-  #  actor = Actor.find_or_create_by(self.actor.id)
-    "always says: #{self.catchphrase}"
+    "#{self.name}always says: #{self.catchphrase}"
   end
 end
